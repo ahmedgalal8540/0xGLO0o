@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main page</title>
+    <title>My Scripts and Writeups</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1>welcome to my new page</h1>
+    <header>
+        <h1>My Scripts and Writeups</h1>
+    </header>
+    <main>
+        <section>
+        <h2>Upload</h2>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" id="fileInput" name="fileInput" accept=".txt, .js">
+            <button type="submit">Upload</button>
+        </form>
+        </section>
+        <section>
+        <h2>My Files</h2>
+        <ul id="fileList"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
