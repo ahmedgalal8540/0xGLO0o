@@ -3,7 +3,8 @@ header {
     padding: 20px;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: #333;
 }
 
@@ -17,5 +18,20 @@ ul {
 }
 
 li {
+    margin-bottom: 10px;
+}
+
+.post {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.post h3 {
+    margin: 0;
+}
+
+.post img {
+    max-width: 100%;
     margin-bottom: 10px;
 }

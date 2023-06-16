@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Scripts and Writeups</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Scripts and Writeups</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
-    <header>
-        <h1>My Scripts and Writeups</h1>
-    </header>
-    <main>
-        <section>
-        <h2>Upload</h2>
-        <form id="uploadForm" enctype="multipart/form-data">
-            <input type="file" id="fileInput" name="fileInput" accept=".txt, .js">
-            <button type="submit">Upload</button>
-        </form>
-        </section>
-        <section>
-        <h2>My Files</h2>
-        <ul id="fileList"></ul>
-        </section>
-    </main>
-    <script src="script.js"></script>
+  <header>
+    <h1>My Scripts and Writeups</h1>
+  </header>
+  <main>
+    <section id="newPost">
+      <h2>New Post</h2>
+      <form id="postForm">
+        <input type="text" id="titleInput" placeholder="Post Title" required>
+        <textarea id="contentInput" placeholder="Post Content" required></textarea>
+        <input type="file" id="imageInput" accept="image/*">
+        <button type="submit">Publish</button>
+      </form>
+    </section>
+    <section id="posts">
+      <h2>Recent Posts</h2>
+      <ul id="postList"></ul>
+    </section>
+  </main>
 </body>
+
 </html>
